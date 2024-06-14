@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photography Portfolio</title>
+    <meta name="description" content="Tarush Tarang's personal photography portfolio showcasing portraits, landscapes, and event photography.">
+    <style>
+        body {
+            font-family: 'League Spartan';
+            margin: 0;
+            padding: 0;
+            background-color: #e3dbdb;
+        }
+        header {
+            background: #333;
+            color: #f8f8f8;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero img {
+            width: 70%;
+            height: auto;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+        }
+        section {
+            padding: 2rem;
+            background-color: #fff;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery div {
+            flex: 1 1 calc(33.333% - 1rem);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        @media (max-width: 768px) {
+            .gallery div {
+                flex: 1 1 calc(50% - 1rem);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery div {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Photography Portfolio</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="your-hero-image.jpg" alt="Stunning landscape photography">
+        <div class="hero-text">
+            <h2>Welcome to My Photography!</h2>
+            <p>Capturing moments from today… Creating memories for a lifetime.</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h1>Portfolio</h1>
+        <div class="gallery">
+            <div>
+                <img src="portrait1.jpg" alt="Portrait example">
+                <p>Portrait</p>
+            </div>
+            <div>
+                <img src="landscape1.jpg" alt="Landscape example">
+                <p>Nature</p>
+            </div>
+            <div>
+                <img src="event1.jpg" alt="Event photography example">
+                <p>Cinematic</p>
+            </div>
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <h5>
+            <p>Hi, I'm Tarush Tarang.</p>
+            <p>I’m a passionate photographer dedicated to capturing the beauty of life’s moments. My work spans portraits, landscapes, each telling its own unique story. Browse my portfolio to see my latest work.</p>
+            <p>
+                I believe that great photography goes beyond just capturing a beautiful image; it's about creating a connection. Whether it's a candid shot of a couple in love, the serene beauty of a landscape, or the intricate details of everyday life, my goal is to create photographs that resonate with you, that make you feel as if you are right there in the moment.
+            </p>
+        </h5>
+        <img src="your-profile-picture.jpg" alt="Tarush Tarang" style="width:400px;">
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p><strong>Feel free to reach out.</strong></p>
+        <p><strong>Email:</strong> <a href="mailto:tarushtarang@gmail.com">tarushtarang@gmail.com</a></p>
+        <p><strong>Follow me on:</strong> <a href="https://www.instagram.com/thephotogenicindian?igsh=cnkxZmh1anJrbGM2">Instagram</a>, <a href="https://x.com/TarushTarang?t=fUnClKX861F9XFXRTjQtfw&s=09">Twitter</a></p>
+        <p><strong>Location:</strong> Muzaffarpur, Bihar</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Photography Portfolio</p>
+    </footer>
+</body>
+</html>
